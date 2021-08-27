@@ -66,5 +66,8 @@ Y=GeoSerie(1.0001,100)
 print("el resultado de la sumatoria es", X)
 print("el resultado de la serie geometrica es", Y)
 print("el error de la multiplicacion anidada es",X-Y)
-plt.plot(X)
-plt.plot(y)
+x=[X,0]
+y=[Y,0]
+plt.scatter(x,y)
+plt.title("grafica de los dos puntos")
+plt.savefig("difference.png")
